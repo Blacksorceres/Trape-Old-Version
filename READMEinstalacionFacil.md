@@ -7,7 +7,9 @@ Si usted esta en kali linux o tenga problemas con "pip" talvez necesite hacer es
 nano /etc/apt/sources.list.d/inestables.list
 (inestables.list es un archivo que crearemos para los sources pero dejando los originales en sources.list sin tocar )
 dentro :de /etc/apt/sources.list.d/inestables.list
+
 #debian
+
 deb https://deb.debian.org/debian buster main
 
 deb-src https://deb.debian.org/debian buster main
