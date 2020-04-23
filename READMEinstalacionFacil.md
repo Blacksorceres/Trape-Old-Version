@@ -31,6 +31,32 @@ dpkg -i elarchivo.deb
 luego de esto ahora si :
 sudo apt -y install python-pip
 
+ingrese a la carpeta trape e instale :
+
+pip -r requirements.txt
+
+inmediatamente :
+
+pip install flask
+pip install flask_socketio
+pip install eventlet
+
+(o use todo en una sola linea luego de pip install)
+
+Nota: 
+requiere nrgok ;
+abra una cuenta en la opagina ngrok y use su tokken como explica ahi,luego haga ngrok global desde su carpeta de descragas:
+sudo cp ngrok /usr/bin/ngrok && chmod a+x ngrok 
+
+ejemplo:
+nrgok http 8080 
+
+y en trape use :
+
+python trape.py -u https://www.youtube.com/watch?v=4L_yCwFD6Jo -p 8080 
+
+(donde el mismo puerto dirija a localhost :recordemos que nrgok sera el tunel a este, y donde url youtube use su favorita)
+
 listo ya esta pip para python 2 ... que es lo que usa trape ... y muchas herramientas mas,
 suerte...
 
